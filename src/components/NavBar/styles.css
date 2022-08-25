@@ -42,13 +42,8 @@
 
 .listaEnlacesRight li {
     list-style: none;
-    margin: 10px;
     display: flex;
     align-items: center;
-}
-
-.listaEnlacesRight li box-icon {
-    margin-right: 5px;
 }
 
 .listaEnlacesRight li a {
@@ -65,19 +60,4 @@
 .listaEnlacesRight li img {
     width: 35px;
     height: 35px;
-}
-
-.textoIndex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.textoIndex h1 {
-    color: white;
-    font-size: 55px;
-    font-family: 'Russo One', sans-serif;
-    text-shadow: 2px 2px 2px black;
-    letter-spacing: 2px;
 }
