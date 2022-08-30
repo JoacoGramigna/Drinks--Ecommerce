@@ -8,11 +8,11 @@ function App() {
     <>
       <header>
         <NavBar />
-        <ItemListContainer greeting={"Hola! Bienvenido a nuestra app"} />
         <div className="backgroundIndex"></div>
         <div class="textoIndex">
           <h1>Armá tus tragos con nosotros.</h1>
         </div>
+        <ItemListContainer greeting={"Hola! Bienvenido a nuestra app"} />
       </header>
       <div className="App"></div>
     </>

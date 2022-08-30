@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Logo from '../../img/logo.png';
+import Logo from '../../assets/logo.png';
 import CardWidget from '../CardWidget';
 
 const NavBar = () => {
