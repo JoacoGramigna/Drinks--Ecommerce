@@ -12,8 +12,8 @@ function App() {
         <div class="textoIndex">
           <h1>Armá tus tragos con nosotros.</h1>
         </div>
-        <ItemListContainer greeting={"Hola! Bienvenido a nuestra app"} />
       </header>
+      <ItemListContainer />
       <div className="App"></div>
     </>
   );
