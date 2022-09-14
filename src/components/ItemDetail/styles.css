@@ -1,0 +1,32 @@
+.detail{
+    height: 100vh;
+    display: flex;
+}
+
+.image img{
+    margin: 100px 50px 0 80px;
+    width: 300px;
+    height: 400px;
+}
+
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h1{
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+.details h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.details h3{
+    font-family: sans-serif;
+    font-size: 28px;
+}

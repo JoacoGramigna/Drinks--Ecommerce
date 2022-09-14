@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import ItemConter from '../../components/ItemConter';
 import ItemList from '../../components/ItemList/ItemList';
 import { products } from '../../data/products';
 import './styles.css';
@@ -26,15 +25,10 @@ const ItemListContainer = ({ greeting }) => {
         })()
     }, [])
 
-    const agregarAlCarrito = (cantidad) => {
-        console.log(`Se agregó la cantidad de ${cantidad} productos a tu carrito!`)
-    }
-
     return (
-        <div>
-            <ItemList products={productos} />
-            <ItemConter initial={1} stock={8} onAdd={agregarAlCarrito} />
-        </div>
+            <div>
+                <ItemList products={productos} />
+            </div>
     )
 }
 

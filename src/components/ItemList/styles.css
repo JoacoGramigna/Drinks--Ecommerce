@@ -1,0 +1,5 @@
+.itemList{
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+}

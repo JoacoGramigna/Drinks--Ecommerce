@@ -31,3 +31,9 @@
     text-shadow: 2px 2px 2px black;
     letter-spacing: 2px;
 }
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
