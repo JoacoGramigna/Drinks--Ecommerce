@@ -1,34 +1,30 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList/ItemList';
-import { products } from '../../data/products';
 import './styles.css';
+import { obtenerProductos } from '../../data/products';
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
+    const { categoryId } = useParams();
 
     useEffect(() => {
-
-        (async () => {
-            const obtenerProductos = new Promise((accept, reject) => {
-                setTimeout(() => {
-                    accept(products)
-                }, 2000);
-            });
-
-            try {
-                const productos = await obtenerProductos;
-                setProductos(productos);
-            } catch (error) {
-                console.log(error)
-            }
-        })()
-    }, [])
+        obtenerProductos
+            .then((res) => {
+                if (!categoryId) {
+                    setProductos(res)
+                } else {
+                    setProductos(res.filter((prod) => prod.category === categoryId))
+                }
+            })
+            .catch((error) => console.log(error));
+    }, [categoryId])
 
     return (
-            <div>
-                <ItemList products={productos} />
-            </div>
+        <div>
+            <ItemList products={productos} />
+        </div>
     )
 }
 

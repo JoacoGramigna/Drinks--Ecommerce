@@ -2,6 +2,8 @@ import React from 'react';
 import './styles.css';
 import Logo from '../../assets/logo.png';
 import CardWidget from '../CardWidget';
+import { Link } from 'react-router-dom';
+import { TbPoint } from 'react-icons/tb';
 
 const NavBar = () => {
     return (
@@ -9,19 +11,24 @@ const NavBar = () => {
             <img src={Logo} alt='' className='navLogo' />
             <ul className='listaEnlacesMiddle'>
                 <li>
-                    <a href='/'>Inicio</a>
+                    <Link to='/'>Inicio</Link>
                 </li>
                 <li>
-                    <a href='/bebidas'>Bebidas</a>
+                    <Link to='/bebidas'>Bebidas</Link>
                 </li>
-                <li>
-                    <a href='/promociones'>Promociones</a>
-                </li>
-                <li>
-                    <a href='/marcas'>Navegá por marcas</a>
+                <li className='submenu'>
+                    <Link to=''>Navegá por bebida</Link>
+                    <ul className='submenuHijos'>
+                        <li>
+                            <TbPoint color='white' /><Link to='/category/Vodka'>Vodka</Link>
+                        </li>
+                        <li>
+                            <TbPoint color='white' /><Link to='/category/Fernet'>Fernet</Link>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            <CardWidget/>
+            <CardWidget />
         </nav>
     )
 }

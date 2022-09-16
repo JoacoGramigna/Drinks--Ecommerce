@@ -1,12 +1,18 @@
-.detail{
+.pageDetail{
     height: 100vh;
     display: flex;
 }
 
 .image img{
-    margin: 100px 50px 0 80px;
     width: 300px;
     height: 400px;
+    margin-right: 100px;
+    margin-left: -200px;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
 }
 
 .detailsContainer{
@@ -18,15 +24,34 @@
 .details h1{
     font-family: sans-serif;
     margin-bottom: 40px;
+    color: white;
 }
 
 .details h2{
     font-family: sans-serif;
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    color: white;
 }
 
 .details h3{
     font-family: sans-serif;
     font-size: 28px;
+    color: white;
+}
+
+.backgroundDetail{
+    background-color: #000000;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.botonVolver{
+    margin-top: 120px;
+    margin-left: 100px;
 }

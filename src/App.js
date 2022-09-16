@@ -3,23 +3,22 @@ import './components/NavBar';
 import NavBar from './components/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import NotFound from './components/NotFound';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <header>
-        <NavBar />
-        <div className="backgroundIndex"></div>
-        <div class="textoIndex">
-          <h1>Armá tus tragos con nosotros.</h1>
-        </div>
-      </header>
-      <main>
-      <ItemListContainer />
-      </main>
-      <ItemDetailContainer />
-      <div className="App"></div>
-    </>
+    <BrowserRouter>
+      <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bebidas" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
