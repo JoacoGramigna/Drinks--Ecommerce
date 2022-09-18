@@ -4,10 +4,12 @@ import './styles.css';
 
 const ItemList = ({ products }) => {
     return (
-        <div className='itemList'>
-            {products.map(product => {
-                return <Item key={products.id} product={product} />
-            })}
+        <div className='mainItemList'>
+            <div className='itemList'>
+                {products.map(product => {
+                    return <Item key={products.id} product={product} />
+                })}
+            </div>
         </div>
     )
 }

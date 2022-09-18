@@ -1,18 +1,23 @@
 import React from 'react';
 import './styles.css';
+import Video from '../../assets/video.mp4';
 
 const Home = () => {
     return (
-        <>
-            <header>
-                <div className="backgroundIndex"></div>
+        <div className='homeContainer'>
+            <header className='section'>
+                <video src={Video} autoPlay loop muted/>
                 <div class="textoIndex">
-                    <h1>Armá tus tragos con nosotros.</h1>
+                    <h1>Disfrutá tus tragos con nosotros</h1>
                 </div>
             </header>
-            <main></main>
-            <footer></footer>
-        </>
+            <main className='section'>
+        Publicidad
+            </main>
+            <footer className='section'>
+        Footer
+            </footer>
+        </div>
     )
 }
 

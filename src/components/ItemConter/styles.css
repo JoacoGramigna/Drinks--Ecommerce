@@ -1,3 +1,70 @@
-span{
-    color: white;
+.botonRestar {
+    min-width: 25px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #06771e;
+    background: #06771e;
+    margin: 5px;
+}
+
+.botonRestar:hover {
+    background: #fff;
+    color: #06771e;;
+}
+
+.botonSumar {
+    min-width: 25px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #06771e;
+    background: #06771e;
+    margin: 5px;
+}
+
+.botonSumar:hover {
+    background: #fff;
+    color: #06771e;
+}
+
+.botonAgregar {
+    min-width: 100px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #06771e;
+    background: #06771e;
+    margin: 5px;
+}
+
+.botonAgregar:hover {
+    background: #fff;
+    color: #06771e;
+}
+
+span {
+    color: black;
+    font-family: sans-serif;
 }

@@ -1,4 +1,4 @@
-export const productos =[
+export const productos = [
     {
         id: '1',
         category: 'Fernet',
@@ -18,7 +18,7 @@ export const productos =[
         stock: 8,
         precio: "600",
     },
-    
+
     {
         id: '3',
         category: 'Vodka',
@@ -27,26 +27,26 @@ export const productos =[
         image: 'https://www.espaciovino.com.ar/media/default/0001/54/thumb_53424_default_big.jpeg',
         stock: 6,
         precio: "3.500",
-        },
-    
-        {
-            id: '4',
-            category: 'Vodka',
-            description: 'Bebida alcohólica',
-            name: 'Smirnoff Vodka',
-            image: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/835/701/products/vodka-smirnoff-12x7001-b62d04f0676fd35df615329904315011-640-0.png',
-            stock: 4,
-            precio: "1.400",
-        },
+    },
+
+    {
+        id: '4',
+        category: 'Vodka',
+        description: 'Bebida alcohólica',
+        name: 'Smirnoff Vodka',
+        image: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/835/701/products/vodka-smirnoff-12x7001-b62d04f0676fd35df615329904315011-640-0.png',
+        stock: 4,
+        precio: "1.400",
+    },
 ]
 
 export const obtenerProductos = new Promise((resolve, reject) => {
-    try{
+    try {
         setTimeout(() => {
             resolve(productos)
         }, 0);
-    } 
-    catch{
+    }
+    catch {
         reject(Error)
     }
 })

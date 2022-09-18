@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.down{
+    background-color: black;
+}
+
+video{
+    position: absolute;
+}
