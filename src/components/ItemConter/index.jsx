@@ -16,12 +16,19 @@ const ItemConter = ({ initial, stock, onAdd }) => {
             setcontador(contador - 1);
         }
     }
+
+    const addCart = () =>{
+        onAdd(contador)
+        setcontador(initial);
+    }
+
+
     return (
         <div className='itemConter'>
             <button className='botonRestar' onClick={restar}>-</button>
             <span>{contador}</span>
             <button className='botonSumar' onClick={sumar}>+</button>
-            <button className='botonAgregar' onClick={() => onAdd(contador)}>Agregar al carrito</button>
+            <button className='botonAgregar' onClick={addCart}>Agregar al carrito</button>
         </div>
     )
 }

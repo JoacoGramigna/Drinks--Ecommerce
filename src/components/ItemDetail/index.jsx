@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import ItemConter from '../../components/ItemConter';
 import { useNavigate } from 'react-router-dom';
@@ -6,17 +6,25 @@ import { useNavigate } from 'react-router-dom';
 const ItemDetail = ({ products }) => {
     const { image, name } = products;
 
-    const agregarAlCarrito = (cantidad) => {
-        console.log(`Se agregó la cantidad de ${cantidad} productos a tu carrito!`)
+    const [qty, setQty] = useState(0);
+
+    const addCard = (quantity) => {
+        setQty(quantity)
     }
 
     const navigate = useNavigate();
 
-    const Volver = () => {
-        navigate(`/`)
+    const handleFinish = () =>{
+        navigate('/cart')
     }
 
-    <button onClick={Volver} className='botonVolver'>Volver al home</button>
+    /*
+        const navigate = useNavigate();
+        const Volver = () => {
+            navigate(`/`)
+        }
+        <button onClick={Volver} className='botonVolver'>Volver al home</button>
+    */
 
     return (
         <div className='detailPage'>
@@ -35,7 +43,7 @@ const ItemDetail = ({ products }) => {
                         <h1>Precio: ${products.precio}</h1>
                     </div>
                     <div className='detailConter'>
-                        <ItemConter initial={1} stock={8} onAdd={agregarAlCarrito} />
+                        {!qty ? <ItemConter initial={1} stock={8} onAdd={addCard} /> : <button onClick={handleFinish}>Finalizar compra</button>}
                     </div>
                 </div>
             </div>
