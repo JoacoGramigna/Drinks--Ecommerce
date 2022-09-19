@@ -2,20 +2,26 @@ import React, { useState } from 'react';
 import './styles.css';
 import ItemConter from '../../components/ItemConter';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { Shop } from '../../context/ShopProvider';
 
 const ItemDetail = ({ products }) => {
     const { image, name } = products;
 
     const [qty, setQty] = useState(0);
 
+    const navigate = useNavigate();
+
+    const {addItem} = useContext(Shop);
+
     const addCard = (quantity) => {
         setQty(quantity)
     }
 
-    const navigate = useNavigate();
-
     const handleFinish = () =>{
-        navigate('/cart')
+        const productToSave = {...products, quantity: qty};
+        addItem(productToSave);
+        navigate('/cart');
     }
 
     /*

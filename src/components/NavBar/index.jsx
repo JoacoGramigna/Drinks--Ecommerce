@@ -28,7 +28,9 @@ const NavBar = () => {
                     </ul>
                 </li>
             </ul>
-            <CardWidget />
+            <div className='carrito'>
+                <CardWidget />
+            </div>
         </nav>
     )
 }

@@ -35,33 +35,6 @@
     border-bottom: 1px solid white;
 }
 
-.listaEnlacesRight {
-    display: flex;
-    margin-right: 100px;
-}
-
-.listaEnlacesRight li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.listaEnlacesRight li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 21px;
-}
-
-.listaEnlacesRight li a:hover {
-    border-bottom: 1px solid white;
-}
-
-.listaEnlacesRight li img {
-    width: 35px;
-    height: 35px;
-}
-
 li:hover .submenuHijos{
     display: block;
     margin-left: -15px;
@@ -70,4 +43,9 @@ li:hover .submenuHijos{
 li .submenuHijos{
     display: none;
     position: absolute;
+}
+
+.carrito{
+    display: flex;
+    margin-right: 100px;
 }
