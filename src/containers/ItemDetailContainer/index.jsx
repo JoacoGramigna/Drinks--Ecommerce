@@ -19,14 +19,3 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer;
-
-/*        
-(async () => {
-    try {
-        const productSelect = productos.find((item) => item.id === productId;
-        setProductDetail(productSelect);
-    } catch (error) {
-        console.log(error)
-    }
-})()
-*/

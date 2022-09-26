@@ -14,7 +14,7 @@ const Item = ({ product }) => {
     return (
         <div className='card' onClick={handleNavigate}>
             <div className='cardImg'>
-                <img className='imgCard' src={image} alt={name}></img>
+                <img className='imgCard' src={image} alt={name} ></img>
             </div>
             <div className='cardDatos'>
                 <h1 className='priceCard'>${product.precio}</h1>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './styles.css';
 
-const ItemConter = ({ initial, stock, onAdd }) => {
-    const [contador, setcontador] = useState(initial);
+const ItemConter = ({ stock, onAdd }) => {
+    const [contador, setcontador] = useState(0);
 
     const sumar = () => {
         if (contador < stock) {
@@ -18,10 +18,9 @@ const ItemConter = ({ initial, stock, onAdd }) => {
     }
 
     const addCart = () =>{
-        onAdd(contador)
-        setcontador(initial);
+        onAdd(contador);
+        setcontador(0);
     }
-
 
     return (
         <div className='itemConter'>

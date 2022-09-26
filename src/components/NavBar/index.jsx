@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import Logo from '../../assets/logo.png';
-import CardWidget from '../CardWidget';
+import CartWidget from '../CartWidget';
 import { Link } from 'react-router-dom';
 import { TbPoint } from 'react-icons/tb';
 
@@ -29,7 +29,7 @@ const NavBar = () => {
                 </li>
             </ul>
             <div className='carrito'>
-                <CardWidget />
+                <CartWidget />
             </div>
         </nav>
     )
