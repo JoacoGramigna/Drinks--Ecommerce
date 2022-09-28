@@ -1,0 +1,9 @@
+.itemCart{
+    display: flex;
+    margin: 20px;
+}
+
+.itemCart img{
+    width: 100px;
+    height: 100px;
+}

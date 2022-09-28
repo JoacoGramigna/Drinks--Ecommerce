@@ -1,0 +1,26 @@
+.cartVacio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.cartVacio p{
+    color: black;
+}
+
+.linkAgrega{
+    color: white;
+    text-decoration: none;
+}
+
+.linkAgrega:hover{
+    border-bottom: 1px solid white;
+}
+
+.carro{
+    padding-top: 100px;
+    background-color: grey;
+    height: 100vh;
+}
