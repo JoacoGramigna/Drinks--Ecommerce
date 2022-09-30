@@ -6,9 +6,10 @@ import { useCart } from '../../context/CartContext';
 
 const ItemDetail = ({ products }) => {
     const [contador, setContador] = useState(1);
+    const [compra, setCompra] = useState(false)
     const navigate = useNavigate();
     const { image, name, id, precio, stock, description } = products;
-    const {addCart} = useCart();
+    const { addCart } = useCart();
 
     const onAdd = (contador) => {
         let itemAComprar = {
@@ -21,9 +22,10 @@ const ItemDetail = ({ products }) => {
             quantity: contador,
         }
         addCart(itemAComprar)
+        setCompra(true)
     }
 
-    const handleFinish = () =>{
+    const handleFinish = () => {
         navigate('/cart');
     }
 
@@ -44,8 +46,8 @@ const ItemDetail = ({ products }) => {
                         <h1>Precio: ${products.precio}</h1>
                     </div>
                     <div className='detailConter'>
-                        <ItemConter stock={stock} onAdd={onAdd} contador={contador} setContador={setContador} />
-                        <button onClick={handleFinish}>Finalizar compra</button>
+                        {!compra ? <ItemConter stock={stock} onAdd={onAdd} contador={contador} setContador={setContador} />
+                            : <button onClick={handleFinish}>Finalizar compra</button>}
                     </div>
                 </div>
             </div>
