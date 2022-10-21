@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import './styles.css';
 
-const ItemConter = ({ stock, onAdd }) => {
-    const [contador, setcontador] = useState(0);
+import { toast } from 'react-hot-toast';
 
+const ItemConter = ({ stock, onAdd, contador, setContador }) => {
     const sumar = () => {
         if (contador < stock) {
-            setcontador(contador + 1);
+            setContador(contador + 1);
         } else {
             alert("No hay suficiente stock");
         }
     }
     const restar = () => {
-        if (contador > 0) {
-            setcontador(contador - 1);
+        if (contador > 1) {
+            setContador(contador - 1);
         }
     }
 
-    const addCart = () =>{
+    const addCart = () => {
         onAdd(contador);
-        setcontador(0);
+        toast.success('Producto agregado al carrito')
     }
 
     return (

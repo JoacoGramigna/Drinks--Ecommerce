@@ -4,10 +4,11 @@
     flex-wrap: wrap;
     align-items: center;
     padding-top: 120px;
+    padding-bottom: 10px;
 }
 
 .mainItemList{
     padding-right: 70px;
     padding-left: 70px;
-    background-color: rgba(128, 128, 128, 0.9);
+    background-color: rgba(128, 128, 128, 0.7);
 }

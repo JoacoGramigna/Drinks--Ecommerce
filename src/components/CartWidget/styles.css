@@ -1,5 +1,5 @@
 .icon {
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .listaEnlacesRight li {
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -28px;
     margin-top: -10px;
     margin-right: 10px;
     color: white;

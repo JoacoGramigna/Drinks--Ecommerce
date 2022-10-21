@@ -1,7 +1,11 @@
 import React from 'react';
+
 import './styles.css';
+
 import Logo from '../../assets/logo.png';
+
 import CartWidget from '../CartWidget';
+
 import { Link } from 'react-router-dom';
 import { TbPoint } from 'react-icons/tb';
 
@@ -19,12 +23,14 @@ const NavBar = () => {
                 <li className='submenu'>
                     <Link to=''>Navegá por bebida</Link>
                     <ul className='submenuHijos'>
-                        <li>
-                            <TbPoint color='white' /><Link to='/category/Vodka'>Vodka</Link>
-                        </li>
-                        <li>
-                            <TbPoint color='white' /><Link to='/category/Fernet'>Fernet</Link>
-                        </li>
+                        <div className='blackBox'>
+                            <li>
+                                <TbPoint color='white' /><Link to='/category/Vodka'>Vodka</Link>
+                            </li>
+                            <li>
+                                <TbPoint color='white' /><Link to='/category/Fernet'>Fernet</Link>
+                            </li>
+                        </div>
                     </ul>
                 </li>
             </ul>

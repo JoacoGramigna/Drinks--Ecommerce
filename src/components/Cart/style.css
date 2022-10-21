@@ -1,26 +1,78 @@
-.cartVacio{
+.carro {
+    padding-top: 140px;
+    background-color: rgba(128, 128, 128, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartVacio {
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.7);
+    gap: 8px;
 }
 
-.cartVacio p{
+.textCartVacio {
+    font-family: sans-serif;
+    font-size: 22px;
     color: black;
 }
 
-.linkAgrega{
+.linkCartVacio p {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.linkAgrega {
     color: white;
     text-decoration: none;
 }
 
-.linkAgrega:hover{
+.linkAgrega:hover {
     border-bottom: 1px solid white;
 }
 
-.carro{
-    padding-top: 100px;
-    background-color: grey;
-    height: 100vh;
+.totalPriceItemsCart {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.totalYBoton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+}
+
+.botonClearCart  {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ef233c;
+    box-shadow: 0 5px #d90429;
+}
+
+.botonClearCart:hover {
+    box-shadow: 0 3px #d90429;
+    top: 1px;
+}
+
+.botonClearCart:active {
+    box-shadow: 0 0 #d90429;
+    top: 5px;
 }

@@ -1,7 +1,8 @@
 .detailPage {
-    background-color: rgba(128, 128, 128, 0.9);
+    background-color: rgba(128, 128, 128, 0.7);
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .detailContainer {
@@ -9,8 +10,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 135px;
 }
 
 .imageDetail {
@@ -25,6 +25,7 @@
 .imageDetail img {
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 .datosDetail {
@@ -33,9 +34,6 @@
     border-radius: 5px;
     width: 300px;
     height: 450px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .detailName {
@@ -46,10 +44,12 @@
 .detailName h1 {
     font-size: 22px;
     font-family: sans-serif;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 .detailDescription {
     width: 90%;
+    height: 200px;
     margin: 15px;
 }
 
@@ -58,16 +58,71 @@
     font-family: sans-serif;
 }
 
+.detailStock {
+    width: 90%;
+    margin: 15px;
+}
+
+.detailStock h1 {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
 .detailPrecio {
     width: 90%;
-    margin-top: 200px;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .detailPrecio h1 {
     font-size: 25px;
     font-family: sans-serif;
+    border-bottom: 1px solid rgb(0, 187, 0, 0.5);
 }
 
 .detailConter {
-    margin-top: 60px;
+    display: grid;
+    place-items: center;
+    width: 90%;
+    height: 80px;
+    margin: 15px;
+}
+
+.detailFinalizarCompra {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #06771e;
+}
+
+.detailFinalizarCompra:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.detailFinalizarCompra:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.detailFinalizarCompra:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
 }

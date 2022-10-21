@@ -1,16 +1,3 @@
-.backgroundIndex {
-    background-color: #000000;
-    background-image: url(../../assets/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-}
-
 .textoIndex {
     height: 100vh;
     display: flex;
@@ -27,6 +14,19 @@
 }
 
 .homeContainer {
+    height: 100vh;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+/* 
+.homeContainer {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
@@ -41,7 +41,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
 }
 
 footer {
@@ -50,10 +49,4 @@ footer {
     justify-content: center;
     background-color: green;
 }
-
-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+*/

@@ -1,19 +1,25 @@
 import React from 'react';
-import { useCart } from '../../context/CartContext';
+
 import './styles.css';
 
-const ItemCart = ({product}) => {
-    const {removeItem} = useCart();
+import { useCart } from '../../context/CartContext';
+
+const ItemCart = ({ product }) => {
+    const { removeItem } = useCart();
 
     return (
         <div className='itemCart'>
-            <img src={product.image} alt="" />
-            <div>
-                <p>Titulo: {product.name}</p>
+            <div className='itemImage'>
+                <img src={product.image} alt="" />
+            </div>
+            <div className='itemCartDatos'>
+                <p className='itemCartDatosTitulo'>{product.name}</p>
                 <p>Cantidad: {product.quantity}</p>
                 <p>Precio: ${product.precio}</p>
                 <p>Sub-total: ${product.quantity * product.precio}</p>
-                <button onClick={() => removeItem(product.id) }>X</button>
+            </div>
+            <div className='botonRemoveItem'>
+                <button onClick={() => removeItem(product.id)}>x</button>
             </div>
         </div>
     )

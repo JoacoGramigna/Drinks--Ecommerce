@@ -1,0 +1,66 @@
+.formulario {
+    border: 1px solid grey;
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 350px;
+}
+
+.titulosFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulosFormulario h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.gridForm {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    place-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gridForm input{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.realizarCompra{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.botonRealizarCompra {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40;
+    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+}
+
+.botonRealizarCompra:active {
+    box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+}
