@@ -1,9 +1,10 @@
-# Proyecto E-commerce Drinks! | React.js
+# Proyecto E-commerce Drinks | React.js
 
-## Descripción
-Este trabajo fue realizado como proyecto final para la cursada de React.js en Coderhouse, donde mi objetivo fue desarrollar un E-commerce de bebidas.
+Este trabajo fue realizado como proyecto final para la cursada de React.js en Coderhouse. Mi objetivo fue desarrollar un E-commerce de bebidas alcohólicas utilizando como base de datos Firebase.
 
-Para el desarrollo de este proyecto utilizé Context, Virtual DOM, Components, Props, Containers, Promises, Requests via http, FireBase, Hooks y custom Hooks.
+El proyecto consiste en poder seleccionar productos (Donde estos mismos pueden ser filtrados por su categoría) y agregarlos a un carrito para su futura compra. Una vez tengamos nuestros productos en el carrito podremos modificarlo eliminando sus ítems tanto individualmente como por completo. Para proceder con la compra se debe de rellenar un formulario con sus datos correspondientes y, si los datos son validados, al terminar la compra los productos en la base de datos son actualizados.
+
+Para el desarrollo de este proyecto utilicé Context, Virtual DOM, Components, Props, Containers, Promises, Requests vía http, FireBase, Hooks y custom Hooks.
 
 ## Librerías utilizadas
 - sweetalert2-react-content.
