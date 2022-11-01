@@ -1,10 +1,10 @@
 # Proyecto E-commerce Drinks | React.js
+Este proyecto fue realizado como proyecto final para la cursada de React.js en Coderhouse. Como consigna debía de desarrollar una app de un e-commerce para poder vender productos de un rubro a elección utilizando como base de datos Firebase.
 
-Este trabajo fue realizado como proyecto final para la cursada de React.js en Coderhouse. Mi objetivo fue desarrollar un E-commerce de bebidas alcohólicas utilizando como base de datos Firebase.
+## Descripción
+El proyecto consiste en que el usuario pueda ingresar, navegar por los productos e ir a sus detalles. Desde el detalle el mismo puede ver la descripción, foto y precio e ingresarlo al carrito. Una vez que el carrito tenga al menos un producto, se visualiza un listado compacto de la orden con el precio total y además cuenta con la opción de modificarlo eliminando sus ítems tanto individualmente como por completo. Al ingresar sus datos personales (ingresándolo dos veces para corroborar que sea correcto), se podrá realizar la compra donde esta misma se guarda en la base de datos con todos los productos y la fecha de compra. Por ultimo se da un feedback del número de orden.
 
-El proyecto consiste en poder seleccionar productos (Donde estos mismos pueden ser filtrados por su categoría) y agregarlos a un carrito para su futura compra. Una vez tengamos nuestros productos en el carrito podremos modificarlo eliminando sus ítems tanto individualmente como por completo. Para proceder con la compra se debe de rellenar un formulario con sus datos correspondientes y, si los datos son validados, al terminar la compra los productos en la base de datos son actualizados.
-
-Para el desarrollo de este proyecto utilicé Context, Virtual DOM, Components, Props, Containers, Promises, Requests vía http, FireBase, Hooks y custom Hooks.
+Para el desarrollo de este proyecto utilicé Context, Virtual Dom, Router Dom, Components, Props, Containers, Promises, Requests vía http, Firebase, Hooks y custom Hooks.
 
 ## Librerías utilizadas
 - sweetalert2-react-content.
